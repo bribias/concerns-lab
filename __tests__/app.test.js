@@ -49,7 +49,7 @@ describe('03_separation-of-concerns-demo routes', () => {
       });
   });
 
-  it('updates order', async () => {
+  it('updates order by id', async () => {
     const order = await Order.insert({ quantity: 10 });
 
     return request(app)
